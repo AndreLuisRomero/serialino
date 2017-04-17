@@ -1,10 +1,10 @@
 # Serialino
-# Console serial for Arduino
-# ver 1.0
+## Console serial for Arduino
+## ver 1.0
 
-# MIT License
-# Copyright (c) 2017 Andre Luis Romero
-# andreluisromero@gmail.com.br 
+## MIT License
+## Copyright (c) 2017 Andre Luis Romero
+## andreluisromero@gmail.com.br 
 
      
 ## Screenshot

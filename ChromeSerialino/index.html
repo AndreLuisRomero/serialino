@@ -1,0 +1,59 @@
+<!-- 
+MIT License
+Copyright (c) 2017 Andre Luis Romero
+andreluisromero@gmail.com.br 
+-->
+
+<style type="text/css">
+<!--
+body {
+    background-color: #CCC;
+}
+#msgconsole { 
+    width: 100%;
+    background-color: #dadada;
+    position: absolute; 
+    bottom: 0;
+    font-style: italic;
+    font-size: 12px;
+}
+
+#btnclass {
+	margin-top: -25px;
+    margin-left: 35px;
+}
+
+-->
+</style>
+
+	<svg height="30" width="30">
+	  <circle  id="statusCircle"  cx="15" cy="15" r="10" stroke="black" stroke-width="3" fill="grey" />
+	</svg>
+
+<div id="btnclass">
+
+	Port: <input type="text" size="2" id="commport" name="commport" value="3">
+
+	<button id="button">Connect</button>
+
+</div>
+
+<br>
+
+<div id="buffer1" >
+</div>
+<br>
+<div id="buffer2">
+</div>
+<br>
+<div id="buffer3">
+</div>
+<br>
+<div id="buffer4">
+</div>
+
+<div id="msgconsole">
+</div>
+
+<script src="jquery-1.11.0.min.js"></script>
+<script src="main.js"></script>

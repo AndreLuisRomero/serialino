@@ -1,0 +1,113 @@
+<!-- André Luis Romero 2017 -->
+<!-- andreluisromero@gmail.com -->
+
+<style type="text/css">
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  /*background-color: #CCC;*/
+}
+
+#msgconsole { 
+    width: 100%;
+    background-color: #dadada;
+    position: absolute; 
+    bottom: 0;
+    font-style: italic;
+    font-size: 12px;
+}
+
+#btnclass {
+  margin-top: -25px;
+  margin-left: 35px;
+}
+
+.chart {
+  /*background: #ccc;*/
+  /*width: 500px;*/
+  /*height: 200px;*/
+  /*border-left: 1px dotted #555;*/
+  /*border-bottom: 1px dotted #555;*/
+  /*padding: 20px 20px 20px 0;*/
+}
+
+/*svg{
+  background-color:beige;
+  padding:50px 0px 0px 0px;}
+  rect{fill:red;
+     stroke:none;
+     shape-rendering:crispEdges;
+   }*/
+
+.graph .labels.x-labels {
+  text-anchor: middle;
+}
+
+.graph .labels.y-labels {
+  text-anchor: end;
+}
+
+.graph {
+  height: 600px;
+  width: 1600px;
+}
+
+.graph .grid {
+  stroke: #ccc;
+  stroke-dasharray: 0;
+  stroke-width: 1;
+}
+
+.labels {
+  font-size: 13px;
+}
+
+.label-title {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 12px;
+  fill: black;
+}
+
+.data {
+  fill: red;
+  stroke-width: 1; 
+}
+
+</style>
+
+</head>
+<body>
+    
+  <svg height="30" width="30">
+    <circle  id="statusCircle"  cx="15" cy="15" r="10" stroke="black" stroke-width="3" fill="grey" />
+  </svg>
+
+<div id="btnclass">
+
+    <!-- <label>
+      Port:
+      <select id="port-picker"></select>
+    </label> -->
+
+  Port: <input type="text" size="2" id="commport" name="commport" value="3">
+
+  <button id="button">Connect</button>
+
+</div>
+
+<br>
+
+<div id="graph"></div>
+<div id="buffer1" ></div>
+<br>
+
+<div id="msgconsole"></div>
+
+<script src="jquery-1.11.0.min.js"></script>
+<script src="main.js"></script>
+
+</body>
+
+</html>
+

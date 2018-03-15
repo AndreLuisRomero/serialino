@@ -68,15 +68,15 @@ void printValues() {
     
     String footer = "}";
 
-    // Print JSON via serial
+    // Select number of channels
 //    Serial.println(header+json1+footer); // sensor 1
-//    delay(2000);
+
       Serial.println(header+json1+","+json2+footer); // sensor 1 2
-//    delay(2000);
+
 //    Serial.println(header+json1+","+json2+","+json3+footer); // sensor 1 2 3
-//    delay(2000);
+
 //    Serial.println(header+json1+","+json2+","+json3+","+json4+footer); // sensor 1 2 3 4
-      delay(250);
+
 
 }
 

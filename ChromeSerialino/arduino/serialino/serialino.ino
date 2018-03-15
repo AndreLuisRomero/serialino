@@ -6,8 +6,6 @@
 // Copyright (c) 2017 Andre Luis Romero
 // andreluisromero@gmail.com.br 
 
-  int incomingByte = 0;
-
   // sensor variables
   int sensorValue1 = 0;
   int sensorValue2 = 0;
@@ -24,12 +22,6 @@ void setup() {
 }
   
 void loop() {
-
-  // Check if there's a serial message waiting.
-  if (Serial.available() > 0) {
-    // If there is, read the incoming byte.
-    incomingByte = Serial.read();
-  }
 
   // Read analog A/D
   sensorValue1 = analogRead(A0);
@@ -51,7 +43,7 @@ void printValues() {
     volts3 = sensorValue3 * (5.0 / 1023.0);
     volts4 = sensorValue4 * (5.0 / 1023.0);
 
-    // Json sensor1 
+    // Example Json sensor1 
     // {"sensor1": 2.414,"fontsize1": 150,"type1": "volts","color1": "FF0000"}
     
     String header = "{";
@@ -63,16 +55,14 @@ void printValues() {
     
     String footer = "}";
 
-    // Print JSON via serial
-//    Serial.println(header+json1+footer); // sensor 1
-//    delay(2000);
-//    Serial.println(header+json1+","+json2+footer); // sensor 1 2
-//    delay(2000);
-//    Serial.println(header+json1+","+json2+","+json3+footer); // sensor 1 2 3
-//    delay(2000);
-      Serial.println(header+json1+","+json2+","+json3+","+json4+footer); // sensor 1 2 3 4
-      delay(250);
+    // Select number of channels
+    // Serial.println(header+json1+footer); // sensor 1
 
+    Serial.println(header+json1+","+json2+footer); // sensor 1 2
+
+    // Serial.println(header+json1+","+json2+","+json3+footer); // sensor 1 2 3
+
+    // Serial.println(header+json1+","+json2+","+json3+","+json4+footer); // sensor 1 2 3 4
 }
 
 
